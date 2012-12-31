@@ -7,3 +7,8 @@ img.contact {
 h3.section-header {
 	padding-top: 45px;
 }
+.bs-docs-sidenav.affix {
+  position: static;
+  width: auto;
+  top: 0;
+}
