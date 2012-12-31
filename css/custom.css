@@ -7,8 +7,11 @@ img.contact {
 h3.section-header {
 	padding-top: 45px;
 }
-.sidebar-nav.affix {
-  position: static;
-  width: auto;
-  top: 0;
+
+@media (max-width: 767px) {
+	.sidebar-nav.affix {
+	  position: static;
+	  width: auto;
+	  top: 0;
+	}
 }
