@@ -8,9 +8,15 @@ h3.section-header {
 	padding-top: 45px;
 }
 
+.app-icons {
+	padding:10px;
+	background:whiteSmoke;
+}
+
 img.app-icon {
-	width: 64px;
-	height:64px;
+	width: 32px;
+	height:32px;
+	margin: 0 5px;
 	cursor:pointer;
 }
 
