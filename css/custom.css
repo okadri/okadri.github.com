@@ -8,6 +8,12 @@ h3.section-header {
 	padding-top: 45px;
 }
 
+img.android {
+	width: 64px;
+	height:64px;
+	cursor:pointer;
+}
+
 @media (max-width: 767px) {
 	.sidebar-nav.affix {
 	  position: static;
