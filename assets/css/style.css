@@ -528,6 +528,7 @@ footer .social a.googleplus { background: url(../img/social-icons/googleplus.png
 footer .social a.youtube { background: url(../img/social-icons/youtube.png) left bottom no-repeat; }
 footer .social a.skype { background: url(../img/social-icons/skype.png) left bottom no-repeat; }
 footer .social a.tumblr { background: url(../img/social-icons/tumblr.png) left bottom no-repeat; }
+footer .social a.cv { background: url(../img/social-icons/cv.png) left bottom no-repeat; }
 
 footer .social a:hover { background-position: left top; }
 
