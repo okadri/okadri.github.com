@@ -1,0 +1,23 @@
+.slide-bg {
+  height: 96vh;
+  width: 96vw;
+  margin: 2vh 2vw;
+  padding: 2em;
+  background: -webkit-linear-gradient(left top, #EEE , #b6c9c9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #EEE, #b6c9c9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #EEE, #b6c9c9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #EEE, #b6c9c9); /* Standard syntax (must be last) */
+
+  border: solid 1px #DDD;
+  border-radius: 15px;
+}
+
+h1.slide-title {
+}
+
+.slide-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
