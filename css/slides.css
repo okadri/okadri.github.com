@@ -22,7 +22,8 @@ body::-webkit-scrollbar {
   border-radius: 3px;
 }
 
-.slide-bg:before, .slide-bg:after
+/*.slide-bg:before,*/
+.slide-bg:after
 {
   z-index: -1;
   position: absolute;
