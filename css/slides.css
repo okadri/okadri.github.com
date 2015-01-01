@@ -3,6 +3,7 @@ body::-webkit-scrollbar {
 }
 
 .slide-bg {
+  position: relative;
   height: 96vh;
   width: 96vw;
   margin: 2vh 2vw;
@@ -25,12 +26,29 @@ body::-webkit-scrollbar {
   border-radius: 3px;
 }
 
-h1.slide-title {
+.slide-bg h1.title {
+  font-size: 3em;
+  text-transform: capitalize;
 }
 
 .slide-content {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  display: block;
+  height: 100%;
 }
 
+.slide-content.text {
+/*  position: relative;*/
+/*  top: 50%;*/
+/*  transform: translateY(-50%);*/
+  margin: 3em 2em;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+.slide-content img.full-image {
+  max-width: 100%;
+  max-height: 90%;
+  margin:auto;
+  display: block;
+}
