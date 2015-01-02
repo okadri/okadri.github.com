@@ -6,16 +6,16 @@ body::-webkit-scrollbar {
   position: relative;
   height: 96vh;
   width: 96vw;
-  margin: 2vh 2vw 4vh;
-  padding: 2em;
+  margin: 2vh 2vw 5vh;
+  padding: 3em;
 
-  background: rgba(242,246,248,1);
-  background: -moz-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(55%, rgba(216,225,231,1)), color-stop(86%, rgba(181,198,208,1)), color-stop(100%, rgba(224,239,249,1)));
-  background: -webkit-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%);
-  background: -o-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%);
-  background: linear-gradient(135deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%);
+  background: rgba(242,246,248,1) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
+  background: -moz-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(55%, rgba(216,225,231,1)), color-stop(86%, rgba(181,198,208,1)), color-stop(100%, rgba(224,239,249,1))) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
+  background: -webkit-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
+  background: -o-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
+  background: -ms-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
+  background: linear-gradient(135deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 );
 
   border: solid 1px #DDD;
@@ -37,20 +37,20 @@ body::-webkit-scrollbar {
   -webkit-box-shadow: 0 15px 10px #777;
   -moz-box-shadow: 0 15px 10px #777;
   box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
 .slide-bg:after
 {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
   right: 10px;
   left: auto;
 }
@@ -66,10 +66,7 @@ body::-webkit-scrollbar {
   height: 100%;
 }
 
-.slide-content.text {
-/*  position: relative;*/
-/*  top: 50%;*/
-/*  transform: translateY(-50%);*/
+.slide-content .text {
   margin: 3em 2em;
   font-size: 2em;
   text-transform: capitalize;
@@ -80,4 +77,11 @@ body::-webkit-scrollbar {
   max-height: 90%;
   margin:auto;
   display: block;
+}
+
+.slide-content img.side-image {
+  max-height: 90%;
+  max-width: 25%;
+  float: right;
+  top: 50%;
 }
