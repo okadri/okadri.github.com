@@ -83,5 +83,5 @@ body::-webkit-scrollbar {
   max-height: 90%;
   max-width: 25%;
   float: right;
-  top: 50%;
+  margin: 2em;
 }
