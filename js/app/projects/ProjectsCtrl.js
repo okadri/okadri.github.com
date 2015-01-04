@@ -15,7 +15,7 @@ OkProjects.controller('ProjectsCtrl', this.ProjectsCtrl = function($scope) {
   ];
 
   $scope.goToSlide = function (number) {
-    $("html, body").animate(
+    $("body").animate(
       { scrollTop: "0px" },
       function() {
         $("#project-carousel").carousel(number);

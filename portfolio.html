@@ -54,8 +54,13 @@
               section = $('div.active').index()
             });
 
+            // Prevent sliding sideways if not on top (workaround)
+            $('#project-carousel').on('slide.bs.carousel', function(e) {
+              if ($(document).scrollTop() != 0) return false;
+            });
+
             var scrollToSlide = function (slide, slides, top_margin) {
-              $("html, body").animate(
+              $("body").animate(
                 { scrollTop: $(slides[slide]).offset().top - top_margin + "px" },
                 function() {
                   sliding = false;
@@ -63,7 +68,7 @@
               );
             }
 
-            $(document.documentElement).keydown(function (event) {
+            $("body").keydown(function (event) {
               sLength = $('#project-carousel .item').length;
               if ($('.slide-bg').length == 0) return
 
@@ -84,7 +89,7 @@
               // handle cursor keys
               if (event.keyCode == 37 && section > 0 && !sliding) {
                 sliding = true;
-                $("html, body").animate(
+                $("body").animate(
                   { scrollTop: "0px" },
                   200 * cur_slide,
                   function() {
@@ -94,7 +99,7 @@
 
               } else if (event.keyCode == 39 && section < sLength-1 && !sliding) {
                 sliding = true;
-                $("html, body").animate(
+                $("body").animate(
                   { scrollTop: "0px" },
                   200 * cur_slide,
                   function() {
@@ -111,8 +116,8 @@
                 scrollToSlide(--cur_slide, slides, top_margin);
               }
 
-              // Don't scroll on arrows up/down
-              if (event.keyCode == 40 || event.keyCode == 38 || event.keyCode == 32) {
+              // Don't scroll on arrows and space
+              if ([32,37,38,39,40].indexOf(event.keyCode) > -1) {
                 return false;
               }
             });
