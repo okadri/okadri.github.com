@@ -49,6 +49,8 @@
             var sliding = false;
 
             $(document.documentElement).keydown(function (event) {
+              if ($('.slide-bg').length == 0) return
+
               var slides = $('.section'+ section +' .slide-bg');
 
               // Get current slide
@@ -70,6 +72,7 @@
                 // $(document).scrollTop(0);
                 $("html, body").animate(
                   { scrollTop: "0px" },
+                  200 * cur_slide,
                   function() {
                     $('#project-carousel').carousel('prev');
                     $('#project-carousel').on('slid.bs.carousel', function() {
@@ -84,6 +87,7 @@
                 // $(document).scrollTop(0);
                 $("html, body").animate(
                   { scrollTop: "0px" },
+                  200 * cur_slide,
                   function() {
                     $('#project-carousel').carousel('next');
                     $('#project-carousel').on('slid.bs.carousel', function() {

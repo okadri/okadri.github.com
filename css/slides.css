@@ -77,13 +77,13 @@ body::-webkit-scrollbar {
   height: 90%;
 }
 
-.slide-content .side-image {
+.slide-content .right-image {
   height: 70%;
-  width: 25%;
+  width: 33%;
   float: right;
 }
 
-.side-image img, .full-image img {
+.right-image img, .full-image img {
   max-height: 100%;
   max-width: 100%;
   margin: auto;
