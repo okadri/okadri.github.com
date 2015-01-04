@@ -69,6 +69,7 @@
             }
 
             $("body").keydown(function (event) {
+              console.log(event.keyCode);
               sLength = $('#project-carousel .item').length;
               if ($('.slide-bg').length == 0) return
 
@@ -114,7 +115,7 @@
               } else if ( event.keyCode == 38 && cur_slide > 0 && !sliding ) {
                 sliding = true;
                 scrollToSlide(--cur_slide, slides, top_margin);
-              } else if ( event.keyCode == 84 && !sliding ) {
+              } else if ( ( event.keyCode == 84 || event.keyCode == 13 ) && !sliding ) {
                 $("body").animate(
                   { scrollTop: "0px" },
                   function() {
