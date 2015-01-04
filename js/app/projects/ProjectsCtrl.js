@@ -1,3 +1,25 @@
 OkProjects.controller('ProjectsCtrl', this.ProjectsCtrl = function($scope) {
-  $scope.slides = ['welcome','messenger', 'chekhov', 'wayfinding', 'dw', 'ipa', 'abjad', 'ashkal', 'qamoosi', 'leasemiles','dinner','conclusion'];
+  $scope.slides = [
+    'welcome',
+    'messenger',
+    'chekhov',
+    'wayfinding',
+    'dw',
+    'ipa',
+    'abjad',
+    'ashkal',
+    'qamoosi',
+    'leasemiles',
+    'dinner',
+    'conclusion'
+  ];
+
+  $scope.goToSlide = function (number) {
+    $("html, body").animate(
+      { scrollTop: "0px" },
+      function() {
+        $("#project-carousel").carousel(number);
+      }
+    );
+  }
 });

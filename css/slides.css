@@ -9,13 +9,13 @@ body::-webkit-scrollbar {
   margin: 2vh 2vw 5vh;
   padding: 3em;
 
-  background: rgba(242,246,248,1) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
-  background: -moz-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(55%, rgba(216,225,231,1)), color-stop(86%, rgba(181,198,208,1)), color-stop(100%, rgba(224,239,249,1))) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
-  background: -webkit-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
-  background: -o-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
-  background: -ms-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
-  background: linear-gradient(135deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) url("/assets/img/portfolio/topLeft.png") no-repeat 20px 20px;
+  background: rgba(242,246,248,1) ;
+  background: -moz-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) ;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(55%, rgba(216,225,231,1)), color-stop(86%, rgba(181,198,208,1)), color-stop(100%, rgba(224,239,249,1))) ;
+  background: -webkit-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) ;
+  background: -o-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) ;
+  background: -ms-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) ;
+  background: linear-gradient(135deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 55%, rgba(181,198,208,1) 86%, rgba(224,239,249,1) 100%) ;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 );
 
   border: solid 1px #DDD;
@@ -60,6 +60,18 @@ body::-webkit-scrollbar {
   text-transform: capitalize;
 }
 
+.slide-bg .center-title {
+  font-size: 3em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide-bg .center-title h1 {
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
 .slide-content {
   position: relative;
   display: block;
@@ -90,3 +102,25 @@ body::-webkit-scrollbar {
   display: block;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
+.slide-bg span.toc {
+  position: absolute;
+  top: calc(100% - 3em);
+  left: 2em;
+  opacity: 0.1;
+  filter: alpha(opacity=10); /* For IE8 and earlier */
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.slide-bg span.toc:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
