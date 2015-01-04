@@ -1,3 +1,3 @@
 OkProjects.controller('ProjectsCtrl', this.ProjectsCtrl = function($scope) {
-  $scope.slides = ['messenger', 'chekhov', 'wayfinding', 'dw', 'ipa', 'abjad', 'ashkal', 'leasemiles', 'qamoosi','dinner'];
+  $scope.slides = ['welcome','messenger', 'chekhov', 'wayfinding', 'dw', 'ipa', 'abjad', 'ashkal', 'qamoosi', 'leasemiles','dinner','conclusion'];
 });
