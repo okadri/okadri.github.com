@@ -10,13 +10,13 @@ OkProjects.directive("slideBg", this.slideBg = function($compile) {
           { scrollTop: "0px" },
           function() {
             $("#project-carousel").carousel(0);
-            $('#project-carousel').on('slid.bs.carousel', function(e) {
+            setTimeout(function(){
               var slides = $('.section0 .slide-bg');
               var top_margin = parseInt($('.slide-bg').css('margin-top').replace("px", ""));
               $("html, body").animate(
                 { scrollTop: $(slides[1]).offset().top - top_margin + "px" }
               );
-            });
+            }, 800); 
           }
         );
       }

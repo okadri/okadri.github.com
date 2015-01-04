@@ -81,6 +81,9 @@ body::-webkit-scrollbar {
 .slide-content .text {
   margin: 3em 2em;
   font-size: 2em;
+}
+
+.slide-content .text ul li{
   text-transform: capitalize;
 }
 
@@ -123,4 +126,9 @@ body::-webkit-scrollbar {
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
+}
+
+p.contact {
+  font-size: 75%;
+  margin: 2em;
 }
